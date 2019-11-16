@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <meta name="description"                           content="">
+       <meta name="viewport"                               content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="mobile-web-app-capable"                content="yes">
+        <meta name="apple-mobile-web-app-capable"          content="yes">
+        <meta name="theme-color"                           content="black"> <!-- Chrome, Firefox OS and Opera -->
+        <meta name="msapplication-navbutton-color"         content="black"> <!-- Windows Phone -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- iOS Safari -->
+        <link rel="apple-touch-icon" href="icons/icon_192.png" sizes="192x192">
+        <link rel="shortcut icon"    href="icons/icon_48.png"  sizes="48x48"  >
+        <link rel="shortcut icon"    href="icons/icon_32.png"  sizes="32x32"  >
+        <link rel="shortcut icon"    href="icons/icon_16.png"  sizes="16x16"  >
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="disable-select disable-scroll">
+
+        <canvas></canvas>
+
+        <pre id="log" class="log"></pre>
+
+        <script type="module">
+
+            import Main from './js/main.js' ;
+
+            window.addEventListener('load', function(){
+
+                Main.run()
+
+            });
+
+            // Prevents "spring-loading" on some mobile browsers
+            document.addEventListener('gesturestart', function (e) {e.preventDefault();});
+            document.addEventListener("touchmove", function(e) {e.preventDefault()});
+
+        </script>
+<!--
+        <script>
+            (function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='http://mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()
+        </script>
+ -->
+    </body>
+</html>
