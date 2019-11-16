@@ -1,0 +1,49 @@
+body, html{
+    margin:0;
+    padding:0;
+    min-width:100%;
+    min-height:100%;
+    background-color: rgb(200,200,200);
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.disable-scroll{
+    top:0;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+.disable-select {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.disable-pointer {
+    pointer-events: none;
+}
+
+.log{
+    font-family: monospace;
+    padding: 0.5em;
+    margin:0;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: rgb(0,0,0);
+}
