@@ -47,7 +47,7 @@ class Vec2{
         return "[" + Math.round (this.x * scalar) / scalar + ", " + Math.round (this.y * scalar) / scalar + "]";
     }
 
-/*
+
     equals(v) {
         return((this.x == v.x) && (this.y == v.x));
     }
@@ -107,7 +107,7 @@ class Vec2{
     rotateAroundPoint(point, ang) {
         return this.sub(point).rotate(ang).add(point);
     }
-*/
+
 }
 
 export default Vec2
