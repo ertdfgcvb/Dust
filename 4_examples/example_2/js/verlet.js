@@ -27,7 +27,7 @@ class Sim {
         this.points = []
         this.links = []
         this.friction = 0.9
-        this.gravity = new Vec2(0, 0)
+        this.gravity = new Vec2(0, 0.5)
     }
 
     update(steps){

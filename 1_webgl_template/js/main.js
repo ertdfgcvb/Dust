@@ -4,7 +4,7 @@ import Image from './image.js'
 
 function run(){
 
-    const MAX_NUM = 10000
+    const MAX_NUM = 10
     const TAU = Math.PI * 2
 
     const points = new Float32Array(MAX_NUM * 3)
@@ -113,7 +113,7 @@ function run(){
 
             points[i*3    ] = x
             points[i*3 + 1] = y
-            points[i*3 + 2] = 10
+            points[i*3 + 2] = 50
         }
 
 
@@ -133,7 +133,7 @@ function run(){
         )
 
         // --- Draw ------------------
-        gl.clearColor(0.8, 0.8, 0.8, 1.0)
+        gl.clearColor(0.6, 0, 0, 1.0)
         gl.clear(gl.COLOR_BUFFER_BIT)
         gl.drawArrays(gl.POINTS, 0, MAX_NUM)
 
